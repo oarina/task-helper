@@ -27,6 +27,7 @@ from task.views import my_task
 urlpatterns = [
     path('login/', my_login, name='login'),
     path('registration/', my_registration, name='registration'),
-    path('task', my_task, name='task'),
+    path('', my_task, name='task'), 
     path('admin/', admin.site.urls),
 ]
+# needed to remove the task/ from the path and leave it blank and that will be the default
